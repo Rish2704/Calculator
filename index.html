@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Cal.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="result" class="result" disabled>
+        <div class="functions" id="functions">
+            <button class="clear" id="clear" value="C" onclick="clearScreen()">C</button>
+            <button style='margin-left:7px' class="del" id="del" value="del" onclick="clearScreen()">del</button>
+            <button style='margin-left:7px' class="btn-f" id="btn-f" value="/" onclick="display('/')">/</button>
+            <button class="btn-num" id="7" value="7" onclick="display('7')">7</button>
+            <button style='margin-left:7px' class="btn-num" id="8" value="8" onclick="display('8')">8</button>
+            <button style='margin-left:7px' class="btn-num" id="9" value="9" onclick="display('9')">9</button>
+            <button style='margin-left:7px' class="btn-f" id="btn-f" value="*" onclick="display('*')">*</button>
+            <button class="btn-num" id="4" value="4" onclick="display('4')">4</button>
+            <button style='margin-left:7px' class="btn-num" id="5" value="5" onclick="display('5')">5</button>
+            <button style='margin-left:7px' class="btn-num" id="6" value="6" onclick="display('6')">6</button>
+            <button style='margin-left:7px' class="btn-f" id="btn-f" value="+" onclick="display('+')">+</button>
+            <button class="btn-num" id="1" value="1" onclick="display('1')">1</button>
+            <button style='margin-left:7px' class="btn-num" id="2" value="2" onclick="display('2')">2</button>
+            <button style='margin-left:7px' class="btn-num" id="3" value="3" onclick="display('3')">3</button>
+            <button style='margin-left:7px' class="btn-f" id="btn-f" value="-" onclick="display('-')">-</button>
+            <button class="btn-num-0" id="0" value="0" onclick="display('0')">0</button>
+            <button style='margin-left:7px' class="btn-f" id="btn-f" value="." onclick="display('.')">.</button>
+            <button style='margin-left:7px' class="enter" id="enter" value="=" onclick="calculate()">=</button>
+        </div>
+    </div>
+</body>
+<script src="Cal.js"></script>
+
+</html>
